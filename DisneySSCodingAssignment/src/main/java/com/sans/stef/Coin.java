@@ -1,19 +1,28 @@
 package com.sans.stef;
 
+/**
+ * Class for representing a coin or any type of currency
+ * 
+ */
 public class Coin {
 	public String name;
-	public int numRequired;
+	/**
+	 * Maximum number of coins before target sum is reached
+	 */
+	public int maxNum;
+	public double value;
 	
-	public Coin(String n, int num) {
+	public Coin(String n, double num) {
 		name = n;
-		numRequired = num;
+		maxNum = (int) Math.floor(num);
+		value = calculateValue(num);
 	}
 	
 	/**
 	 * 1.00 is used here representing 100% of target sum,
 	 * not necessarily $1.00
 	 */
-	public double value() {
-		return 1.00 / numRequired;
+	private double calculateValue(double num) {
+		return 1.00 / num;
 	}
 }
