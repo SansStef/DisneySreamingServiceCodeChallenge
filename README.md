@@ -1,5 +1,7 @@
 # DisneySreamingServiceCodeChallenge
 
+Using Java8 - 
+
 To Build:
 Compile the three classes Coin.java, CoinCombination.java, and CombinationMain.java
 
