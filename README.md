@@ -9,3 +9,7 @@ If no argument is given, it will default to "Quarter,4,Dime,10,Nickel,20,Penny,1
 
 example:
 java CombinationMain Coin,1.5,Arrowhead,3,Button,150
+
+
+Alternatively:
+You can open the project structure in Eclipse or similar IDE and run CombinationMain from there
